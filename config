@@ -1,0 +1,6 @@
+pathToExecutable: prog/fuzzgoat
+pathToMakefile: prog/
+pathToInput: in/
+lang: c
+args: "@@"
+cores: 2
