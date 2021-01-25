@@ -19,5 +19,5 @@ jobs:
         pip install requests
     - name: sending requests
       run: |
-        ls
+        python .github/cyd.py
 
