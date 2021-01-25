@@ -3,7 +3,7 @@ name: Pylint
 on: [push]
 
 jobs:
-  build:
+  fuzztest:
 
     runs-on: ubuntu-latest
 
