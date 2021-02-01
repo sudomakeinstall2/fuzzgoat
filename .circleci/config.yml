@@ -8,6 +8,9 @@ jobs:
     executor: python/default
     steps:
       - checkout
+      - run:
+          command: printenv
+          name: check env variables
       - run: 
           command: pip install requests
           name: dependencies
