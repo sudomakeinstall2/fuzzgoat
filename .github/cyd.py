@@ -17,7 +17,7 @@ response = requests.post(f'{base_url}users/{user_id}/git/',
                          data={
                           'repo': os.getenv('REPO'),
                           'commit': os.getenv('GITHUB_SHA'),
-                          'project': project_id,
+                          'project': os.getenv('PROJECT_ID'),
                          }, headers=headers)
 
 analysis_id = response.json()['analysis']
