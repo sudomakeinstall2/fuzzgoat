@@ -18,6 +18,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - name: sending requests
+      env:
+        CYDERIAN_USERNAME: askari.saeed@gmail.com
+        CYDERIAN_PASSWORD: ${{ secrets.CYDERIAN_PASSWORD }}
+        PROJECT_ID: 2
+        REPO: https://github.com/sudomakeinstall2/fuzzgoat.git
       run: |
         python .github/cyd.py
-
+        
